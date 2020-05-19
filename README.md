@@ -1,1 +1,5 @@
-# Denver-AirBnb-Dara
+# Denver-AirBnb-Data
+
+For this project, I was interested in creating models to predict whether a guest enjoyed their stay or not. The dataset I retrieved from kaggle.com. For the rating scores that guests gave, I turned this into a binary variable in which if guests gave a 80 or higher, the guests enjoyed their stay (1) and if below 80 they did not enjoy their stay (0). I used this as a categorical response and fit the model again predictors such as the number of bedrooms, number of bathrooms and whether the unit has wifi, allows pets or has a hot tub (all categorical variables and employed in the excel spreadsheet). I decided to create a logsitic regression model, as well as use linear discriminant analysis (LDA) and quadratic discriminant analysis (QDA).
+
+Upon employing the logistic regression, it was very interesting to see that the only variables that are quite significant in determining if the guest enjoyed their stay is if the unit had wifi and if the unit had a hot tub. In Denver, these two amenities seem to be hot commodities. Upon running the train and test sets to predict results, the logistic regression model obtained a 85% classification rate. Upon employing LDA & QDA, they obtained 85% and 87% classification rates, respectively. As a result, LDA performed slightly better than logistic regession and QDA.
